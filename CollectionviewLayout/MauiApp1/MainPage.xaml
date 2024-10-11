@@ -1,26 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			  xmlns:cs="http://chipsoft.com/core/presentation"
-             x:Class="MauiApp1.MainPage">
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:cs="http://chipsoft.com/core/presentation"
+			 x:Class="MauiApp1.MainPage">
 
-	<ContentPage.Resources>
-	</ContentPage.Resources>
-
-	<CollectionView x:Name="colView" ItemsLayout="HorizontalGrid, 2">
+	<CollectionView ItemsSource="{Binding ItemCollection}"
+					ItemsLayout="HorizontalGrid, 2">
 		<CollectionView.ItemTemplate>
 			<DataTemplate>
-				<Label Text="{Binding Name}" BackgroundColor="Yellow" HeightRequest="200" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+				<Label Text="{Binding ItemName}"
+					   BackgroundColor="Yellow"
+					   HeightRequest="200"/>
 			</DataTemplate>
 		</CollectionView.ItemTemplate>
 		<CollectionView.Footer>
-			<ContentView >
+			<ContentView>
 				<ContentView.ControlTemplate>
 					<ControlTemplate>
-						<Grid RowDefinitions="Auto, *">
-							<ContentPresenter Grid.Row="0"/>
-							<ContentView Grid.Row="1"  HeightRequest="100" InputTransparent="True"/>
-						</Grid>
+						<Label Text="Collection View Footer"
+							   BackgroundColor="Red"
+							   HeightRequest="50"/>
 					</ControlTemplate>
 				</ContentView.ControlTemplate>
 			</ContentView>

@@ -8,10 +8,9 @@ namespace MauiApp1
 		public MainPage()
 		{
 			InitializeComponent();
-            ItemCollection = new List<Item>();
-            ItemCollection.Add(new Item() { ItemName = "Item1" });
-            //ItemCollection.Add(new Item() { ItemName = "Item2"});
-            colView.ItemsSource = ItemCollection;
+			ItemCollection = new List<Item>();
+			ItemCollection.Add(new Item() { ItemName = "Item1" });
+			//ItemCollection.Add(new Item() { ItemName = "Item2"});
 			BindingContext = this;
 
 		}

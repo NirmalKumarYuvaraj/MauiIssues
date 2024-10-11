@@ -9,20 +9,18 @@
 		<CollectionView.ItemTemplate>
 			<DataTemplate>
 				<Label Text="{Binding ItemName}"
-					   BackgroundColor="Yellow"
-					   HeightRequest="200"/>
+					   BackgroundColor="Yellow"/>
 			</DataTemplate>
 		</CollectionView.ItemTemplate>
 		<CollectionView.Footer>
 			<ContentView>
 				<ContentView.ControlTemplate>
 					<ControlTemplate>
-						<Label Text="Collection View Footer"
-							   BackgroundColor="Red"
-							   HeightRequest="50"/>
+						<Label Text="Collection View Footer"/>
 					</ControlTemplate>
 				</ContentView.ControlTemplate>
 			</ContentView>
 		</CollectionView.Footer>
 	</CollectionView>
+    
 </ContentPage>

@@ -1,3 +1,3 @@
 # MauiIssues
 
-This repo contains issues within maui
+This repo contains issues within maui , contains details
